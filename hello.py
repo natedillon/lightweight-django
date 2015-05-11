@@ -25,7 +25,7 @@ def index(request):
 
 
 urlpatterns = (
-	url(r'^$', index)
+	url(r'^$', index),
 )
 
 
