@@ -1,3 +1,3 @@
-# Hello Django
+# Lightweight Django Chapter 2: Stateless Web Application
 
-“The World’s Smallest Django Project” from Chapter 1 of [Lightweight Django](http://shop.oreilly.com/product/0636920032502.do).
+“Placeholder Image Server” tutorial from Chapter 2 of [Lightweight Django](http://shop.oreilly.com/product/0636920032502.do).
