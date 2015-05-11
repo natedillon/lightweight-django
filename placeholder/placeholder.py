@@ -26,6 +26,9 @@ from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
 
 
+def placeholder(request, width, height):
+	return HttpResponse('Ok')
+
 def index(request):
 	return HttpResponse('Hello World')
 
