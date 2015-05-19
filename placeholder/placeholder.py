@@ -13,6 +13,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'umm^j87&4$h^7ryr#_im-x=&!xg#pj&20#dz#
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split(',')
 
+BASE_DIR = os.path.dirname(__file__)
+
 settings.configure(
 	DEBUG = DEBUG,
 	SECRET_KEY = SECRET_KEY,
@@ -23,6 +25,16 @@ settings.configure(
 		'django.middleware.csrf.CsrfViewMiddleware',
 		'django.middleware.clickjacking.XFrameOptionsMiddleware',
 	),
+	INSTALLED_APPS = (
+		'django.contrib.staticfiles',
+	),
+	TEMPLATE_DIRS = (
+		os.path.join(BASE_DIR, 'templates'),
+	),
+	STATICFILES_DIRS = (
+		os.path.join(BASE_DIR, 'templates'),
+	),
+	STATIC_URL = '/static/',
 )
 
 
