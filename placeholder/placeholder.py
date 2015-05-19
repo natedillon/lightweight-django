@@ -32,7 +32,7 @@ settings.configure(
 		os.path.join(BASE_DIR, 'templates'),
 	),
 	STATICFILES_DIRS = (
-		os.path.join(BASE_DIR, 'templates'),
+		os.path.join(BASE_DIR, 'static'),
 	),
 	STATIC_URL = '/static/',
 )
@@ -93,10 +93,10 @@ def placeholder(request, width, height):
 
 def index(request):
 	example = reverse('placeholder', kwargs={'width': 50, 'height':50})
-    context = {
-        'example': request.build_absolute_uri(example)
-    }
-    return render(request, 'home.html', context)
+	context = {
+		'example': request.build_absolute_uri(example)
+	}
+	return render(request, 'home.html', context)
 
 
 urlpatterns = (
