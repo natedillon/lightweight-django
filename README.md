@@ -1,3 +1,3 @@
-# Hello Django
+# Lightweight Django Chapter 1: The World’s Smallest Django Project
 
-“The World’s Smallest Django Project” from Chapter 1 of [Lightweight Django](http://shop.oreilly.com/product/0636920032502.do).
+“Hello Django” tutorial from Chapter 1 of [Lightweight Django](http://shop.oreilly.com/product/0636920032502.do).
